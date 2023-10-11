@@ -17,48 +17,44 @@ The data set contains the following diseases:
 * Vascular lesion
 
 ## Project Pipeline
-* <strong>Data Reading/Data Understanding </strong> <br/>
-→ Defining the path for train and test images
-* <strong>Dataset Creation</strong> <br/>
-→ Create train & validation dataset from the train directory with a batch size of 32. Also, make sure you resize your images to 180*180.
-## Table of Contents
-* [General Info](#general-information)
-* [Technologies Used](#technologies-used)
-* [Conclusions](#conclusions)
-* [Acknowledgements](#acknowledgements)
-
-<!-- You can include any other section that is pertinent to your problem -->
-
-## General Information
-- Provide general information about your project here.
-- What is the background of your project?
-- What is the business probem that your project is trying to solve?
-- What is the dataset that is being used?
-
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
-
-## Conclusions
-- Conclusion 1 from the analysis
-- Conclusion 2 from the analysis
-- Conclusion 3 from the analysis
-- Conclusion 4 from the analysis
-
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
-
+* <strong>Data Reading/Data Understanding </strong> → Defining the path for train and test images
+* <strong>Dataset Creation</strong> → Create train & validation dataset from the train directory with a batch size of 32. Also, make sure you resize your images to 180*180.
+* <strong>Model Building & training </strong> <br/>
+    * Creating a CNN model, which can accurately detect 9 classes present in the dataset. While building the model, rescale images to normalize pixel values between (0,1). <br/>
+    * Choosing an appropriate optimiser and loss function for model training <br/>
+    * Training the model for ~20 epochs <br/>
+    * Findings after the model fit. Checking if there is any evidence of model overfit or underfit. <br/>
+* <strong>Class distribution:</strong> Examine the current class distribution in the training dataset <br/>
+    → Which class has the least number of samples? <br/>
+    → Which classes dominate the data in terms of the proportionate number of samples? <br/>
+* <strong>Chosing an appropriate data augmentation strategy to resolve underfitting/overfitting </strong>
+* <strong>Handling class imbalances:</strong> Rectifying class imbalances present in the training dataset with [Augmentor](https://augmentor.readthedocs.io/en/master/) library.
+* <strong>Model Building & training on the rectified class imbalance data </strong> <br/>
+    * Creating a CNN model, which can accurately detect 9 classes present in the dataset. While building the model, rescale images to normalize pixel values between (0,1). <br/>
+    * Choosing an appropriate optimiser and loss function for model training <br/>
+    * Training the model for ~30 epochs <br/>
+    * Findings after the model fit. Checking if there is any evidence of model overfit or underfit. <br/>
+* <strong>Class distribution:</strong> Examine the current class distribution in the training dataset <br/>
+    → Which class has the least number of samples? <br/>
+    → Which classes dominate the data in terms of the proportionate number of samples? <br/>
+* <strong>Prediction with test images </strong>
 
 ## Technologies Used
-- library - version 1.0
-- library - version 2.0
-- library - version 3.0
+- Python
+- Google Colab
+- T4 GPU by Google Colab
 
-<!-- As the libraries versions keep on changing, it is recommended to mention the version of library used in this project -->
-
-## Acknowledgements
-Give credit here.
-- This project was inspired by...
-- References if any...
-- This project was based on [this tutorial](https://www.example.com).
-
+## Python Libraries Used
+- pathlib - Version: 1.0.1
+- tensorflow - Version: 2.13.0
+- matplotlib - Version: 3.7.1
+- numpy - Version: 1.23.5
+- pandas - Version: 1.5.3
+- os
+- PIL
+- google-colab - Version: 1.0.0
+- seaborn - Version: 0.12.2
+- glob
 
 ## Contact
 Created by [@janardanchavan] - feel free to contact me!
