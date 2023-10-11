@@ -56,6 +56,14 @@ The data set contains the following diseases:
 - seaborn - Version: 0.12.2
 - glob
 
+## Data Source
+- Data source can be downloaded from [here](https://drive.google.com/file/d/1xLfSQUGDl8ezNNbUkpuHOYvSpTyxVhCs/view?usp=sharing)
+
+## Additional Information
+- No pre-trained model or Transfer learning used. All the model building process is custom model.
+- The model training was taking time to train as it was working with large epochs. Hence, GPU runtime was used in Google Colab.
+
+
 ## Contact
 Created by [@janardanchavan] - feel free to contact me!
 
