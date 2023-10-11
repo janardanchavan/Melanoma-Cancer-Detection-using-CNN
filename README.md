@@ -17,9 +17,10 @@ The data set contains the following diseases:
 * Vascular lesion
 
 ## Project Pipeline
-* Data Reading/Data Understanding 
+* <strong>Data Reading/Data Understanding </strong> <br/>
 → Defining the path for train and test images
-
+* <strong>Dataset Creation</strong> <br/>
+→ Create train & validation dataset from the train directory with a batch size of 32. Also, make sure you resize your images to 180*180.
 ## Table of Contents
 * [General Info](#general-information)
 * [Technologies Used](#technologies-used)
