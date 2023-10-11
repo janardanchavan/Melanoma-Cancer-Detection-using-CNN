@@ -16,6 +16,9 @@ The data set contains the following diseases:
 * Squamous cell carcinoma
 * Vascular lesion
 
+## Project Pipeline
+* Data Reading/Data Understanding 
+→ Defining the path for train and test images
 
 ## Table of Contents
 * [General Info](#general-information)
